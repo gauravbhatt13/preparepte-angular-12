@@ -11,6 +11,7 @@ import { WritingComponent } from './writing-module/writing/writing.component';
 import { SummarizeWrittenTextComponent } from './writing-module/summarize-written-text/summarize-written-text.component';
 import { WriteAssayComponent } from './writing-module/write-assay/write-assay.component';
 import { ReadingComponent } from './reading-module/reading/reading.component';
+import { McSingleAnswerComponent } from './reading-module/mc-single-answer/mc-single-answer.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
 { path: 'summarize-written-text', component: SummarizeWrittenTextComponent },
 { path: 'write-assay', component: WriteAssayComponent },
 { path: 'reading', component: ReadingComponent },
+{ path: 'mc-single-answer', component: McSingleAnswerComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({

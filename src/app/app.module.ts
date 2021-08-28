@@ -14,6 +14,7 @@ import { WritingComponent } from './writing-module/writing/writing.component';
 import { SummarizeWrittenTextComponent } from './writing-module/summarize-written-text/summarize-written-text.component';
 import { WriteAssayComponent } from './writing-module/write-assay/write-assay.component';
 import { ReadingComponent } from './reading-module/reading/reading.component';
+import { McSingleAnswerComponent} from './reading-module/mc-single-answer/mc-single-answer.component';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -30,7 +31,8 @@ import { DisqusComponent } from './disqus.component';
     WritingComponent,
     SummarizeWrittenTextComponent,
     WriteAssayComponent,
-    ReadingComponent
+    ReadingComponent,
+    McSingleAnswerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
