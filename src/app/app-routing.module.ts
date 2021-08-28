@@ -19,6 +19,8 @@ import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-b
 import { ListeningComponent } from './listening-module/listening/listening.component';
 import { SummarizeSpokenTextComponent } from './listening-module/summarize-spoken-text/summarize-spoken-text.component';
 import { ListeningMcAnswersComponent } from './listening-module/listening-mc-answers/listening-mc-answers.component';
+import { ListeningFillBlanksComponent } from './listening-module/listening-fill-blanks/listening-fill-blanks.component';
+import { HighlightCorrectSummaryComponent } from './listening-module/highlight-correct-summary/highlight-correct-summary.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -41,6 +43,8 @@ const routes: Routes = [
 { path: 'listening', component: ListeningComponent },
 { path: 'summarize-spoken-text', component: SummarizeSpokenTextComponent },
 { path: 'listening-mc-answers', component: ListeningMcAnswersComponent },
+{ path: 'listening-fill-blanks', component: ListeningFillBlanksComponent },
+{ path: 'highlight-correct-summary', component: HighlightCorrectSummaryComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({

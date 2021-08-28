@@ -23,6 +23,9 @@ import { DragDropDirective } from './reading-module/reorder-paragraphs/reorder-p
 import { ListeningComponent } from './listening-module/listening/listening.component';
 import { SummarizeSpokenTextComponent } from './listening-module/summarize-spoken-text/summarize-spoken-text.component';
 import { ListeningMcAnswersComponent } from './listening-module/listening-mc-answers/listening-mc-answers.component';
+import { ListeningFillBlanksComponent } from './listening-module/listening-fill-blanks/listening-fill-blanks.component';
+import { HighlightCorrectSummaryComponent } from './listening-module/highlight-correct-summary/highlight-correct-summary.component';
+
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -48,7 +51,9 @@ import { DisqusComponent } from './disqus.component';
     DragDropDirective,
     ListeningComponent,
     SummarizeSpokenTextComponent,
-    ListeningMcAnswersComponent
+    ListeningMcAnswersComponent,
+    ListeningFillBlanksComponent,
+    HighlightCorrectSummaryComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

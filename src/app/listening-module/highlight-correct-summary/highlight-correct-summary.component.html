@@ -1,0 +1,198 @@
+<section class="main-section">
+  <h4 class="mt-3">You will see a video. Click on the paragraph that best relates to the video.</h4>
+  <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="test1-tab" data-toggle="tab" href="#test1" role="tab" aria-controls="test1"
+        aria-selected="true">Test
+        1
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test2-tab" data-toggle="tab" href="#test2" role="tab" aria-controls="test2" aria-selected="false">Test
+        2
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active pt-3" id="test1" role="tabpanel" aria-labelledby="test1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers1 ? showAnswers1=false : showAnswers1=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo1">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/4 Highlight correct summary/Prompt_ Highlight_correct_summary_Item_1.mp3"
+                type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="collapse" id="demo1">
+              <h4>Transcript</h4>
+              <p>So what influences consumers in different parts of the world? Many factors affect how we, as
+                individuals
+                and societies, live, buy and consume. And it should be readily apparent that culture has a profound
+                impact on the way consumers perceive themselves, the products they buy and consume, and the processes
+                by
+                which those products should be purchased, and the organization that sells those products.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Culture throughout the world
+                plays
+                a mutually beneficial role in the consumer markets of a society. Through culture, consumers are able to
+                identify the products most important to them, and at the same time, culture is able to adapt to what
+                buyers and sellers desire at any given moment.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect because the speaker indicates that culture affects what products people buy.
+              The
+              speaker does not state or imply that organizations that sell products have an effect on culture.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Throughout the many cultures
+                found
+                in the world, consumers have behaved predictably. While each society may have different values, the
+                level
+                of consumption as compared to other cultures is relatively equal. Globalization ensures that consumers
+                adopt the same process when buying goods and services.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect because the speaker directly contradicts this summary as she says that culture
+              affects the processes by which consumers purchase products, implying that culture informs values and
+              thereby influences purchasing. There is no discussion of the predictability of consumer behavior or the
+              level of consumption.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">The way a consumer buys, uses,
+                and
+                values a product is independent of cultural influence. A consumer may purchase desired products and
+                still
+                practice the beliefs and customs of their culture. Even the organizations responsible for bringing
+                various products to consumers operate without regard to cultural sensitivities.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect because the speaker indicates that culture “has a profound impact” on which
+              products consumers buy and use, how they buy them, and which organizations they buy them from.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio"> Consumers in different cultures
+                value different things. These values, which can be unique from one culture to the next, impact not only
+                what kinds of products these consumers buy, but also who they buy them from, how they buy them, and for
+                what uses and reasons.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is correct. The speaker says “culture has a profound impact on the products they buy and
+              consume” which implies that culture influences consumer decisions, leading people from one culture to
+              make
+              different purchases from those in another culture. According to the speaker, culture also affects “the
+              processes by which those products should be purchased, and the organization that sells those products”,
+              which addresses “how they buy them” and “who they buy them from.”
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade show pt-3" id="test2" role="tabpanel" aria-labelledby="test2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers2 ? showAnswers2=false : showAnswers2=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo2">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/4 Highlight correct summary/Prompt_Highlight_correct_summary_Item_2.mp3"
+                type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="collapse" id="demo2">
+              <h4>Transcript</h4>
+              <p>We’re not running out of oil. The first thing that one can say with absolute confidence is that we’re
+                not about to run out of oil, we are definitely not. But what we are approaching is the end of the first
+                half, and this is one way to describe it, and this chapter in history lasted about a hundred and fifty
+                years since the first oil was produced. And we’re coming to the end of that, and you have to find oil
+                before you can produce it, and when we look back into history, we can find that the peak of discovery
+                was
+                in 1964, and that the discovery of oil has been falling ever since, relentlessly, um, and it’s been
+                falling despite the world wide search, always aimed at the biggest and best prospects, no one’s looking
+                for the smallest and the worst, the biggest and the best. It’s been falling despite amazing
+                technological
+                and geological advances, we understand this business so much more than we did. And finally, it’s been
+                falling despite a very happy economic environment, whereby most of the cost of exploration is written
+                off
+                against tax. So I would say in view of all of those incentives, and all of those benefits, if discovery
+                has actually been falling relentlessly, er, there is no good reason to think that this trend is going
+                to
+                change direction. So, in other words, we’ve passed the peak.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Unless major oil consumers invest
+                in exploration now (which would be the first time major funds have been invested since 1964) global oil
+                production will level out and be unable to meet increased demands from India and China.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect. The speaker says “the peak of (oil) discovery was in 1964” and “the discovery
+              of oil has been falling ... despite the world wide search” and all of the advances and tax incentives.
+              The
+              speaker does not mention either India or China and says nothing about increased demand.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">With the continuation of
+                improvements in technology, geology, and with government support, there is little doubt that further
+                major reserves of oil will be found in the near future. This should result in sustainable oil supplies
+                for a further 150 years.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect. The speaker says “oil discovery has been falling ... despite amazing
+              technological and geological advances,” and “there is no good reason to think that this trend is going to
+              change direction.”
+
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Oil consumption reached its first
+                peak in 1964. Since that time the world has become increasingly dependent on oil. It is unlikely that
+                there will be any new major oil discoveries in the immediate future or at any subsequent time.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is correct. The speaker asserts, “We’re not running out of oil” at the beginning of the
+              recording. The speaker then says that the peak of oil discovery was in 1964, and that the rate of oil
+              discovery “has been falling ever since” despite “amazing technological and geological advances.” He also
+              mentions that “most of the cost of exploration is written off against tax.”
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">While we are not about to run out
+                of oil, we are certainly past the peak of oil production, which occurred about 40 years ago. This is
+                despite improvements in technology, geology, and with tax-subsidized investment in exploration.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect because the speaker does not discuss the world’s dependence on oil.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-disqus></app-disqus>
+</section>
