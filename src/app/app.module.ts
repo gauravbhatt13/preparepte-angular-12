@@ -19,6 +19,7 @@ import { McMultipleAnswerComponent } from './reading-module/mc-multiple-answer/m
 import { ReorderParagraphsComponent } from './reading-module/reorder-paragraphs/reorder-paragraphs.component';
 import { ReadingFillBlanksComponent } from './reading-module/reading-fill-blanks/reading-fill-blanks.component';
 import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-blanks.component';
+import { DragDropDirective } from './reading-module/reorder-paragraphs/reorder-paragraphs.directive';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -40,7 +41,8 @@ import { DisqusComponent } from './disqus.component';
     McMultipleAnswerComponent,
     ReorderParagraphsComponent,
     ReadingFillBlanksComponent,
-    RwFillBlanksComponent
+    RwFillBlanksComponent,
+    DragDropDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

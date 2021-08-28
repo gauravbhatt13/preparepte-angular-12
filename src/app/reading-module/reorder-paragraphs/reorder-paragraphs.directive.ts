@@ -1,10 +1,10 @@
-import { Directive, ElementRef, Renderer } from '@angular/core';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 // Directive decorator
 @Directive({ selector: '[appDragDrop]' })
 // Directive class
 export class DragDropDirective {
-    constructor(private el: ElementRef, private renderer: Renderer) {
+    constructor(private el: ElementRef, private renderer: Renderer2) {
         // Use renderer to render the element with styles
         const element: any = this.el.nativeElement;
         element.setAttribute('draggable', 'true');
