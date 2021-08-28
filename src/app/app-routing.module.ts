@@ -12,6 +12,7 @@ import { SummarizeWrittenTextComponent } from './writing-module/summarize-writte
 import { WriteAssayComponent } from './writing-module/write-assay/write-assay.component';
 import { ReadingComponent } from './reading-module/reading/reading.component';
 import { McSingleAnswerComponent } from './reading-module/mc-single-answer/mc-single-answer.component';
+import { McMultipleAnswerComponent } from './reading-module/mc-multiple-answer/mc-multiple-answer.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const routes: Routes = [
 { path: 'write-assay', component: WriteAssayComponent },
 { path: 'reading', component: ReadingComponent },
 { path: 'mc-single-answer', component: McSingleAnswerComponent },
+{ path: 'mc-multiple-answers', component: McMultipleAnswerComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({
