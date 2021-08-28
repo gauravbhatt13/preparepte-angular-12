@@ -20,6 +20,9 @@ import { ReorderParagraphsComponent } from './reading-module/reorder-paragraphs/
 import { ReadingFillBlanksComponent } from './reading-module/reading-fill-blanks/reading-fill-blanks.component';
 import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-blanks.component';
 import { DragDropDirective } from './reading-module/reorder-paragraphs/reorder-paragraphs.directive';
+import { ListeningComponent } from './listening-module/listening/listening.component';
+import { SummarizeSpokenTextComponent } from './listening-module/summarize-spoken-text/summarize-spoken-text.component';
+import { ListeningMcAnswersComponent } from './listening-module/listening-mc-answers/listening-mc-answers.component';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -42,7 +45,10 @@ import { DisqusComponent } from './disqus.component';
     ReorderParagraphsComponent,
     ReadingFillBlanksComponent,
     RwFillBlanksComponent,
-    DragDropDirective
+    DragDropDirective,
+    ListeningComponent,
+    SummarizeSpokenTextComponent,
+    ListeningMcAnswersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

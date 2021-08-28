@@ -16,6 +16,9 @@ import { McMultipleAnswerComponent } from './reading-module/mc-multiple-answer/m
 import { ReorderParagraphsComponent } from './reading-module/reorder-paragraphs/reorder-paragraphs.component';
 import { ReadingFillBlanksComponent } from './reading-module/reading-fill-blanks/reading-fill-blanks.component';
 import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-blanks.component';
+import { ListeningComponent } from './listening-module/listening/listening.component';
+import { SummarizeSpokenTextComponent } from './listening-module/summarize-spoken-text/summarize-spoken-text.component';
+import { ListeningMcAnswersComponent } from './listening-module/listening-mc-answers/listening-mc-answers.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -35,6 +38,9 @@ const routes: Routes = [
 { path: 'reorder-paragraphs', component: ReorderParagraphsComponent },
 { path: 'reading-fill-blanks', component: ReadingFillBlanksComponent },
 { path: 'rw-fill-blanks', component: RwFillBlanksComponent },
+{ path: 'listening', component: ListeningComponent },
+{ path: 'summarize-spoken-text', component: SummarizeSpokenTextComponent },
+{ path: 'listening-mc-answers', component: ListeningMcAnswersComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({
