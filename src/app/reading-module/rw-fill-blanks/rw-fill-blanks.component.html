@@ -1,0 +1,354 @@
+<section class="main-section">
+  <h4 class="mt-4">
+    In the text below some words are missing. Select words that appropriately map to the Gaps in the sentences.</h4>
+  <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="test1-tab" data-toggle="tab" href="#test1" role="tab" aria-controls="test1"
+        aria-selected="true">Test
+        1
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test2-tab" data-toggle="tab" href="#test2" role="tab" aria-controls="test2" aria-selected="false">Test
+        2
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test3-tab" data-toggle="tab" href="#test3" role="tab" aria-controls="test3" aria-selected="false">Test
+        3
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test4-tab" data-toggle="tab" href="#test4" role="tab" aria-controls="test4" aria-selected="false">Test
+        4
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test4-tab" data-toggle="tab" href="#test5" role="tab" aria-controls="test5" aria-selected="false">Test
+        5
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active pt-3" id="test1" role="tabpanel" aria-labelledby="test1">
+      <div class="row">
+        <div class="col-md-12">
+          <p>This short book has been concerned with the main tool of learning: language. Many children, particularly
+            those
+            in the industrial areas of the country, start their educational lives with this tool blunt, and live their
+            early
+            years in home circumstances which often conspire to keep it <b>...(GAP1)... </b>.with the result, as the
+            young
+            sixth-former wrote in Chapter One, that even he 'becomes increasingly conscious of his<b>...(GAP2)... </b>of
+            fluency',
+            which may become 'the most prominent manifestation of his embarrassment and discomfort.' To
+            <b>...(GAP3)... </b>this, to give the child the confidence, which derives from
+            <b>...(GAP4)... </b> of speech and writing, is surely one of the prime tasks of the country's schools.
+            There is
+            no single recipe for a<b>...(GAP5)... </b> to do this well, but it may be helpful to consider the
+            conditions, which
+            appear to be
+            <b>...(GAP6)...</b> to the primary schools whose work has been quoted.
+          </p>
+        </div>
+        <div class="col-md-12" *ngFor="let item of gapArray1; let i = index">
+          <label style="margin-right: 10px">GAP {{i + 1}}</label>
+          <div class="form-check form-check-inline" *ngFor="let i of item">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> {{i}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Toggle Answer</button>
+          <div id="demo1" class="collapse mt-3">
+            This short book has been concerned with the main tool of learning: language. Many children, particularly
+            those in the industrial
+            areas of the country, start their educational lives with this tool blunt, and live their early years in
+            home circumstances
+            which often conspire to keep it <span class="highlight">blunt</span>, with the result, as the young
+            sixth-former
+            wrote in Chapter One, that even he 'becomes increasingly conscious of his <span class="highlight">lack</span>
+            of
+            fluency', which may become 'the most prominent manifestation of his embarrassment and discomfort.' To <span
+              class="highlight">avoid</span>
+            this, to give the child the confidence, which derives from <span class="highlight">ease</span>
+            of speech and writing, is surely one of the prime tasks of the country's schools. There is no single recipe
+            for a <span class="highlight">way</span> to do this well, but it may be helpful to consider the conditions,
+            which appear to
+            be <span class="highlight">common</span> to the primary schools whose work has been quoted.
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test2" role="tabpanel" aria-labelledby="test2">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Evidence for a genetic basis of antisocial behavior stems from several different lines of research. First,
+            behavioral
+            genetic studies of twins and adoptees have demonstrated that <b>...(GAP1)... </b>plays a role in antisocial
+            behavior,
+            including various forms of aggression and criminality, by finding greater concordance for such behavior in
+            genetically<b>...(GAP2)...
+            </b>individuals, compared to non-relatives living in the same environment. Second, various correlates of
+            antisocial
+            behavior, including personality factors such as impulsivity, sensation-seeking, risk-taking, and
+            callous-unemotional
+            traits, are known to be at least partly genetically
+            <b>...(GAP3)... </b>Third, psychiatric outcomes related to antisocial behavior, including antisocial
+            personality
+            disorder, gambling, and substance use and abuse, have also been
+            <b>...(GAP4)... </b> in genetically informative designs, and each of these has demonstrated significant
+            genetic
+            links.
+          </p>
+        </div>
+        <div class="col-md-12" *ngFor="let item of gapArray2; let i = index">
+          <label style="margin-right: 10px">GAP {{i + 1}}</label>
+          <div class="form-check form-check-inline" *ngFor="let i of item">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> {{i}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Toggle Answer</button>
+          <div id="demo2" class="collapse mt-3">
+            Evidence for a genetic basis of antisocial behavior stems from several different lines of research. First,
+            behavioral genetic
+            studies of twins and adoptees have demonstrated that <span class="highlight">heredity</span> plays a
+            role in antisocial behavior, including various forms of aggression and criminality, by finding greater
+            concordance
+            for such behavior in genetically <span class="highlight">related</span> individuals, compared to
+            non-relatives
+            living in the same environment. Second, various correlates of antisocial behavior, including personality
+            factors
+            such as impulsivity, sensation-seeking, risk-taking, and callous-unemotional traits, are known to be at
+            least partly
+            genetically <span class="highlight">influenced</span>. Third, psychiatric outcomes related to antisocial
+            behavior,
+            including antisocial personality disorder, gambling, and substance use and abuse, have also been <span
+              class="highlight">investigated</span>
+            in genetically informative designs, and each of these has demonstrated significant genetic links.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test3" role="tabpanel" aria-labelledby="test3">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Umami was first identified in Japan, in 1908, when Dr. Kikunae Ikeda concluded that kombu, a type of
+            edible seaweed,
+            had a different taste than most foods. He conducted <b>...(GAP1)... </b> that found that the high
+            concentration
+            of glutamate in kombu was what made it so tasty. From there, he crystallized monosodium glutamate (MSG),
+            the seasoning
+            that would become <b>...(GAP2)... </b> the world over. Decades later, umami became scientifically defined
+            as one
+            of the five individual tastes sensed by receptors on the <b>...(GAP3)... </b>. Then in 1996, a team of
+            University
+            of Miami researchers studying taste perception made another breakthrough. They discovered separate taste
+            receptor
+            cells in the tongue for detecting umami. Before then, the concept was uncharted. "Up until our research,
+            the <b>...(GAP4)...
+            </b> wisdom in the scientific community was that umami was not a separate sense. It was just a combination
+            of the
+            other four qualities (salty, sweet, bitter, sour)", explained Dr. Stephen Roper, the University of Miami
+            physiology
+            and biophysics professor who helped zero in on the taste along with Nirupa Chaudhari, the team's lead
+            researcher.
+          </p>
+        </div>
+        <div class="col-md-12" *ngFor="let item of gapArray3; let i = index">
+          <label style="margin-right: 10px">GAP {{i + 1}}</label>
+          <div class="form-check form-check-inline" *ngFor="let i of item">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> {{i}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Toggle Answer</button>
+          <div id="demo3" class="collapse mt-3">
+            Umami was first identified in Japan, in 1908, when Dr. Kikunae Ikeda concluded that kombu, a type of edible
+            seaweed, had
+            a different taste than most foods. He conducted <span class="highlight">experiments</span> that found
+            that the high concentration of glutamate in kombu was what made it so tasty. From there, he crystallized
+            monosodium
+            glutamate (MSG), the seasoning that would become <span class="highlight">popular</span> the world over.
+            Decades
+            later, umami became scientifically defined as one of the five individual tastes sensed by receptors on the
+            <span class="highlight">tongue</span> . Then in 1996, a team of University of Miami researchers studying
+            taste perception
+            made another breakthrough. They discovered separate taste receptor cells in the tongue for detecting umami.
+            Before
+            then, the concept was uncharted. "Up until our research, the <span class="highlight">predominate</span>
+            wisdom
+            in the scientific community was that umami was not a separate sense. It was just a combination of the other
+            four
+            qualities (salty, sweet, bitter, sour)", explained Dr. Stephen Roper, the University of Miami physiology
+            and biophysics
+            professor who helped zero in on the taste along with Nirupa Chaudhari, the team's lead researcher.
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test4" role="tabpanel" aria-labelledby="test4">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Global climate change is the greatest environmental challenge we face. We have at most a few decades to
+            make the
+            necessary investments to prevent the most serious impacts of climate change. Future generations will judge
+            us based
+            on the investments we are considering now. In its February 2007 report, the Intergovernmental Panel on
+            Climate
+            Change (IPCC) warns that global emissions must peak no later than 2015 if we are to hold average global
+            temperature
+            increases to 2.4°C (4.3°F) or less. Moving to an emissions pathway that will hold temperature increases to
+            a minimum
+            will require a <b>...(GAP1)... </b> effort. There is no time to lose given the long lag in research and
+            development
+            cycles, and energy-intensive <b>...(GAP2)... </b> and product turnover. Fundamentally, <b>...(GAP3)... </b>
+            the
+            world's energy system is unlikely to occur within this timeframe. It is thus imperative to find means to
+            reduce
+            the footprint of the existing system - most particularly, of coal, which is the most greenhouse gas
+            intensive of
+            the fossil fuels driving climate change. It is in this context that Carbon Dioxide Capture and
+            Sequestration (CCS)
+            becomes one of the most critical technologies in the menu of choices. It is the only option that provides a
+            potentially
+            near-term solution to rapidly expanding coal use here, in China and around the world. CCS must play the
+            critical
+            role of <b>...(GAP4)... </b> growth in emissions from coal until other alternatives are ready.
+          </p>
+        </div>
+        <div class="col-md-12" *ngFor="let item of gapArray4; let i = index">
+          <label style="margin-right: 10px">GAP {{i + 1}}</label>
+          <div class="form-check form-check-inline" *ngFor="let i of item">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> {{i}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4">Toggle Answer</button>
+          <div id="demo4" class="collapse mt-3">
+            Global climate change is the greatest environmental challenge we face. We have at most a few decades to
+            make the necessary
+            investments to prevent the most serious impacts of climate change. Future generations will judge us based
+            on the
+            investments we are considering now. In its February 2007 report, the Intergovernmental Panel on Climate
+            Change
+            (IPCC) warns that global emissions must peak no later than 2015 if we are to hold average global
+            temperature increases
+            to 2.4°C (4.3°F) or less. Moving to an emissions pathway that will hold temperature increases to a minimum
+            will
+            require a <span class="highlight">colossal</span> effort. There is no time to lose given the long lag
+            in research and development cycles, and energy-intensive
+            <span class="highlight">infrastructure</span> and product turnover. Fundamentally, <span class="highlight">altering</span>
+            the world's energy system is unlikely to occur within this timeframe. It is thus imperative to find means
+            to reduce the footprint
+            of the existing system - most particularly, of coal, which is the most greenhouse gas intensive of the
+            fossil fuels
+            driving climate change. It is in this context that Carbon Dioxide Capture and Sequestration (CCS) becomes
+            one of
+            the most critical technologies in the menu of choices. It is the only option that provides a potentially
+            near-term
+            solution to rapidly expanding coal use here, in China and around the world. CCS must play the critical role
+            of
+            <span class="highlight">curbing</span> growth in emissions from coal until other alternatives are ready.
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test5" role="tabpanel" aria-labelledby="test5">
+      <div class="row">
+        <div class="col-md-12">
+          <p> Peering into the future seldom produces a clear picture. But this is not the <b>...(GAP1)... </b> with
+            bio- energy. Its long-term
+            impacts on the global economy appear to be pretty clear, making many long- term predictions quite
+            compelling, including
+            the demise of the price-setting power of the Organization of the Petroleum Exporting Countries and the end
+            of agricultural
+            protectionism. First, technology is <b>...(GAP2)... </b> to deliver a biofuel that will be competitive with
+            fossil energy at something
+            like current prices. It probably already has. Brazil has been exporting ethanol to the US at an average
+            delivery
+            price of $1.45 for an amount with the energy equivalence of a gallon of petrol. It is doing so profitably
+            and in
+            increasing amounts, in spite of a 54 cents a gallon tariff to protect American maize-based ethanol <b>...(GAP3)...
+            </b>. Many
+            countries are following suit. But ethanol is an inconvenient chemical compound that is corrosive and
+            soluble in
+            water, thus limiting its immediate market to that of a gasoline additive. However, this is just the Betamax
+            phase
+            of the industry. There is plenty of private venture capital money being <b>...(GAP4)... </b> into finding
+            more efficient ways
+            of extracting energy from biomass and delivering it to transport and power systems. Over time, the
+            technology will
+            also become more flexible, allowing more crops to be used as feedstock, not just the current choice of
+            sugarcane,
+            maize and palm oil. New technologies will be able to extract energy from cellulose, allowing the use of
+            pastures
+            such as switch grass as well as the refuse of current food production.
+          </p>
+        </div>
+        <div class="col-md-12" *ngFor="let item of gapArray5; let i = index">
+          <label style="margin-right: 10px">GAP {{i + 1}}</label>
+          <div class="form-check form-check-inline" *ngFor="let i of item">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> {{i}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo5">Toggle Answer</button>
+          <div id="demo5" class="collapse mt-3">
+            Peering into the future seldom produces a clear picture. But this is not the <span class="highlight">circumstances</span>
+            with bio- energy. Its long-term
+            impacts on the global economy appear to be pretty clear, making many long- term predictions quite
+            compelling, including
+            the demise of the price-setting power of the Organization of the Petroleum Exporting Countries and the end
+            of agricultural
+            protectionism. First, technology is <span class="highlight">bound</span> to deliver a biofuel that will be
+            competitive with fossil energy at something
+            like current prices. It probably already has. Brazil has been exporting ethanol to the US at an average
+            delivery
+            price of $1.45 for an amount with the energy equivalence of a gallon of petrol. It is doing so profitably
+            and in
+            increasing amounts, in spite of a 54 cents a gallon tariff to protect American maize-based ethanol <span
+              class="highlight">producers</span>. Many
+            countries are following suit. But ethanol is an inconvenient chemical compound that is corrosive and
+            soluble in
+            water, thus limiting its immediate market to that of a gasoline additive. However, this is just the Betamax
+            phase
+            of the industry. There is plenty of private venture capital money being <span class="highlight">poured</span>
+            into finding more efficient ways
+            of extracting energy from biomass and delivering it to transport and power systems. Over time, the
+            technology will
+            also become more flexible, allowing more crops to be used as feedstock, not just the current choice of
+            sugarcane,
+            maize and palm oil. New technologies will be able to extract energy from cellulose, allowing the use of
+            pastures
+            such as switch grass as well as the refuse of current food production.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-disqus></app-disqus>
+</section>

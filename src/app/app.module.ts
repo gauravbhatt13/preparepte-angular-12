@@ -16,6 +16,9 @@ import { WriteAssayComponent } from './writing-module/write-assay/write-assay.co
 import { ReadingComponent } from './reading-module/reading/reading.component';
 import { McSingleAnswerComponent} from './reading-module/mc-single-answer/mc-single-answer.component';
 import { McMultipleAnswerComponent } from './reading-module/mc-multiple-answer/mc-multiple-answer.component';
+import { ReorderParagraphsComponent } from './reading-module/reorder-paragraphs/reorder-paragraphs.component';
+import { ReadingFillBlanksComponent } from './reading-module/reading-fill-blanks/reading-fill-blanks.component';
+import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-blanks.component';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -34,7 +37,10 @@ import { DisqusComponent } from './disqus.component';
     WriteAssayComponent,
     ReadingComponent,
     McSingleAnswerComponent,
-    McMultipleAnswerComponent
+    McMultipleAnswerComponent,
+    ReorderParagraphsComponent,
+    ReadingFillBlanksComponent,
+    RwFillBlanksComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

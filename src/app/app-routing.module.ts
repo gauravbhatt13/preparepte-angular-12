@@ -13,6 +13,9 @@ import { WriteAssayComponent } from './writing-module/write-assay/write-assay.co
 import { ReadingComponent } from './reading-module/reading/reading.component';
 import { McSingleAnswerComponent } from './reading-module/mc-single-answer/mc-single-answer.component';
 import { McMultipleAnswerComponent } from './reading-module/mc-multiple-answer/mc-multiple-answer.component';
+import { ReorderParagraphsComponent } from './reading-module/reorder-paragraphs/reorder-paragraphs.component';
+import { ReadingFillBlanksComponent } from './reading-module/reading-fill-blanks/reading-fill-blanks.component';
+import { RwFillBlanksComponent } from './reading-module/rw-fill-blanks/rw-fill-blanks.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +32,9 @@ const routes: Routes = [
 { path: 'reading', component: ReadingComponent },
 { path: 'mc-single-answer', component: McSingleAnswerComponent },
 { path: 'mc-multiple-answers', component: McMultipleAnswerComponent },
+{ path: 'reorder-paragraphs', component: ReorderParagraphsComponent },
+{ path: 'reading-fill-blanks', component: ReadingFillBlanksComponent },
+{ path: 'rw-fill-blanks', component: RwFillBlanksComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({
