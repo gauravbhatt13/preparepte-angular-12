@@ -1,0 +1,16 @@
+#footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color:#a8d0e6;
+    color: black;
+ }
+
+ #top-navigation-bar{
+    background-color: #f76c6c;
+ }
+
+ .dropdown-menu {
+     margin-top: 10px;
+ }

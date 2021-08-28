@@ -1,0 +1,44 @@
+.g-icon { font-size: 72px; }
+
+.menu-item a:hover {
+    color: #a8d0e6;
+}
+.menu-item a {
+    color: black;
+}
+.menu-item {
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item p {
+    text-decoration: underline;
+}
+.home-section{
+    min-height: calc(100vh);
+    background-color: blanchedalmond;
+    margin-top: 60px;
+}
+.tips-section{
+    min-height: calc(80vh);
+    background-color: black;
+    color: white;
+}
+
+#footer-menu {
+    background-color: azure;
+}
+
+#footer-menu ul li {
+    color: #a8d0e6;
+    margin: 20px;
+}
+
+#footer-menu ul li a {
+    color: black;
+    text-decoration: underline;
+}
+
+#footer-menu ul li a:hover{
+    color: #a8d0e6;
+}

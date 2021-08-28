@@ -1,0 +1,114 @@
+<section class="main-section">
+  <h4 class="mt-3">You will hear a question. Please give a simple and short answer. Often just one word or a few words
+    is enough.</h4>
+  <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+    <li class="nav-item" *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+      <a class="nav-link" [ngClass]="{'active': i==1}" data-toggle="tab" [attr.href]="'#test' + i" role="tab"
+        [attr.aria-controls]="'test' + i" aria-selected="true">
+        Question{{i}}
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]" class="tab-pane fade show pt-3" [ngClass]="{'active': i==1}"
+      [attr.id]="'test' + i" role="tabpanel" [attr.aria-labelledby]="'test' + i">
+      <p>Play Question {{i}}</p>
+      <audio controls>
+        <source [attr.src]="'/assets/Prompts/3 Answer short question/Answer short question_Item '+ i + '/Prompt_Answer_short_question_Item_' + i + '.mp3'"
+          type="audio/mpeg"> Your browser does not support the audio element.
+      </audio>
+      <button class="btn btn-sm btn-primary float-right" data-toggle="collapse" [attr.data-target]="'#ans'+ i">Toggle
+        Answer</button>
+      <div [attr.id]="'ans'+i" class="collapse">
+        <p>{{answers[i-1].question}}</p>
+        Correct: {{answers[i-1].correct}}<br> Incorrect: {{answers[i-1].incorrect}}
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row mt-5">
+    <div class="col-md-12">
+
+      <h3>More Examples</h3>
+      <ol>
+        <li style="text-align: left;">Paying at the counter after shopping – check out</li>
+        <li style="text-align: left;">First story of the basement/building – basement</li>
+        <li>Fed up – Negative feeling</li>
+        <li>Who do you call in case of leaking pipeline – plumber</li>
+        <li>Microscope is used to see – Micro-organism</li>
+        <li>Transfer quickly from computer to computer – virus, Downloading</li>
+        <li>Democratic government – people vote</li>
+        <li>What do you get when you buy something – receipt</li>
+        <li>Agriculture based country – farming economy</li>
+        <li>Stars or planet – astronomy</li>
+        <li>Dead remains of plants – fossils</li>
+        <li>Business and advertising PR means – public relation</li>
+        <li>What do you need to see thing which are far away – Binoculars</li>
+        <li>Magnify minimal objects – microscope</li>
+        <li>Who to visit if you have fear of crowd – psychologist</li>
+        <li>Means of travelling in developed countries – public transport</li>
+        <li>Washing clothes – laundry</li>
+        <li>Who is more playing football – men</li>
+        <li>Living things – Biology</li>
+        <li>Month between September and November – October</li>
+        <li>Thing most people use in their home – Bed</li>
+        <li>Main difference between a wrist watch and a clock – Size</li>
+        <li>Where we store meat – Freezer</li>
+        <li>Most important document while driving – Driving license</li>
+        <li>Where we can buy floor – Supermarket</li>
+        <li>For X-ray – radiology</li>
+        <li>Volume of water – liters</li>
+        <li>Hand joint with arm – wrist</li>
+        <li>wall clock and hand watch – their relative sizes</li>
+        <li>City – Urban area</li>
+        <li>When moon covers sun -solar eclipse</li>
+        <li>Orbits the sun – Planet</li>
+        <li>Football in-charge – referee</li>
+        <li>cardiologists – heart</li>
+        <li>event placed in time order – a timeline</li>
+        <li>sea water different from fresh water – Salt</li>
+        <li>University courses – orally or written assessment</li>
+        <li>washing clothes – in the bathroom</li>
+        <li>protect motor bike rider’s – Helmet</li>
+        <li>leap year – 366 days</li>
+        <li>fitness – more exercise</li>
+        <li>Europe is home to – United kingdom</li>
+        <li>arrival at hotel – reception or check-in</li>
+        <li>job title building designer – architecture</li>
+        <li>watches a sport event – spectator</li>
+        <li>climb to roof – ladder</li>
+        <li>don’t feel like eating – appetite</li>
+        <li>improve health n fitness – diet and more physical exercise</li>
+        <li>What is the name of ground military forces? – Army</li>
+        <li>What is someone that can’t see called? – Blind</li>
+        <li>What do you call the middle of something? – Center</li>
+        <li>Whose job is it to treat people that are ill or have an injury at a hospital? – Doctor</li>
+        <li>What is the process of teaching and learning called? – Education</li>
+        <li>What kind of book is written by a person about their own life? – Autobiography</li>
+        <li>What is the red liquid that flows through a body? – Blood</li>
+        <li>What is the payment of a student’s education by an organization called? – scholarship</li>
+        <li>What is piece of paper with official information written on it? – document</li>
+        <li>What is the name of a building where you can borrow books? – library</li>
+        <li>Who is a person that makes bread, cakes and pastries? – baker</li>
+        <li>What organ controls your speech, feelings, body movement and thoughts? – brain</li>
+        <li>What piece of equipment shows a person what direction they are traveling? – compass</li>
+        <li>What is a series of events that happen in your mind while you are sleeping? – dream</li>
+        <li>What is that person belongs to an organization called? – member</li>
+        <li>Who cuts men’s hair? – barber</li>
+        <li>What is it called when two or more people are speaking to each other? – conversation</li>
+        <li>What is a violent conflict between two or more countries? – war</li>
+        <li>What do you call the number of people living in a specific area? – population</li>
+        <li>What do you call a person that can’t hear? – deaf</li>
+        <li>What is the day that someone is born? – birthday</li>
+        <li>What plan shows how much money is available and how it will be spent? – budget</li>
+        <li>What is the name of a system of government in which the people elect their leaders? – democracy</li>
+        <li>What planet do we live on? – earth</li>
+        <li>What is the job of someone that looks after your teeth and gums? – dentist</li>
+        <li>What is the time period before noon is called? – ante meridian</li>
+        <li>What is the time after noon called? – post meridian</li>
+        <li>What organ do cardiologists specialize in? – Heart</li>
+      </ol>
+    </div>
+  </div>
+  <app-disqus></app-disqus>
+</section>

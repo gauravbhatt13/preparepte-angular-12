@@ -1,0 +1,127 @@
+<section class="main-section">
+    <h4 class="mt-3">Play an audio and repeat it loud. Three sample repeatations are given for each audio.</h4>
+    <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+        <li class="nav-item" *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+            <a class="nav-link" [ngClass]="{'active': i==1}" data-toggle="tab" [attr.href]="'#test' + i" role="tab"
+                [attr.aria-controls]="'test' + i" aria-selected="true">
+                Audio {{i}}
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]" class="tab-pane fade show pt-3" [ngClass]="{'active': i==1}"
+            [attr.id]="'test' + i" role="tabpanel" [attr.aria-labelledby]="'test' + i">
+            <table class="table mt-3">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Play Audio {{i}}</th>
+                        <th scope="col">Repeat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><audio controls>
+                                <source [attr.src]="'/assets/Prompts/1 Repeat sentence/Repeat sentence_Item ' + i + '/Prompt_Repeat_sentence_Item_' + i + '.mp3'"
+                                    type="audio/mpeg"> Your browser does not support the audio element.
+                            </audio></td>
+                        <td><audio controls>
+                                <source [attr.src]="'/assets/Sample responses/2 Repeat sentence/Repeat sentence_Item ' + i + '/Sample_response_Repeat_sentence_Item_' + i + '_B1.mp3'"
+                                    type="audio/mpeg"> Your browser does not support the audio element.
+                            </audio></td>
+                    </tr>
+                    <tr>
+                        <td><audio controls>
+                                <source [attr.src]="'/assets/Sample responses/2 Repeat sentence/Repeat sentence_Item ' + i + '/Sample_response_Repeat_sentence_Item_' + i + '_B2.mp3'"
+                                    type="audio/mpeg"> Your browser does not support the audio element.
+                            </audio></td>
+                    </tr>
+                    <tr>
+                        <td><audio controls>
+                                <source [attr.src]="'/assets/Sample responses/2 Repeat sentence/Repeat sentence_Item ' + i + '/Sample_response_Repeat_sentence_Item_' + i + '_C1.mp3'"
+                                    type="audio/mpeg"> Your browser does not support the audio element.
+                            </audio></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h4>More Examples</h4>
+            <ol>
+                <li>
+                    <p>I would prefer if you could call my cellphone rather than my landline next time.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-1.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>Cats are incredibly intelligent creatures, but nowhere near as friendly and affectionate as dogs.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-2.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>Follow the signs directing you to the North parking lot and pick up a parking pass from the parking officer.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-3.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>If you’re interested in free education, there are more opportunities than ever before to sign up for free online courses.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-4.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>Last winter, my heating bill was 3X the cost of the winter before AND I was still cold all the time!
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-5.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>It is estimated that over 500 sea turtles die as a result of plastic consumption every year.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-6.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>Solar power is going to replace coal and oil as our primary energy source in the near future.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-7.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>Please make sure that you collect all of your belongings and take them with you.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-8.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>This year, you will not need a textbook because all required readings will be posted in the student portal.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-9.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+                <li>
+                    <p>The best advice a teacher ever gave me was to take organized and detailed notes in class.
+                    </p><audio controls>
+                        <source [attr.src]="'/assets/audio/repeat-sentence-10.mp3'" type="audio/mpeg"> Your browser does
+                        not support the audio element.
+                    </audio>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <app-disqus></app-disqus>
+</section>
