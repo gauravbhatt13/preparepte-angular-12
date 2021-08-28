@@ -1,0 +1,176 @@
+<section class="main-section">
+  <h4 class="mt-3">Listen to the recording and answer the multiple choice question by selecting the correct response.
+    Only one response is correct.</h4>
+  <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="test1-tab" data-toggle="tab" href="#test1" role="tab" aria-controls="test1"
+        aria-selected="true">Test
+        1
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test2-tab" data-toggle="tab" href="#test2" role="tab" aria-controls="test2" aria-selected="false">Test
+        2
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active pt-3" id="test1" role="tabpanel" aria-labelledby="test1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers1 ? showAnswers1=false : showAnswers1=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo1">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/5 Multiple choice choose single answer/Prompt_Multiple_choice_choose_single_answer_Item_1.mp3"
+                type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>What is the main idea that the speaker is trying to convey in her comments?</p>
+            <div class="collapse" id="demo1">
+              <h4>Transcript</h4>
+              <p>I have chronic pain and at times this is severe, but this is managed with opiates. I know the general
+                public has a very perverted view of opiates because they think street addiction, heroin, drug
+                smugglers.
+                However, if prescribed correctly by doctors in the right dose for your height and weight and you manage
+                it well yourself, I haven't increased my dose of 80 milligrams of morphine in the last 18 years. So
+                that's a fairly good illustration, that no you don't double it every ten minutes the way the general
+                public think. And also it's very well looked after by the government. I have to present myself to my
+                GPs
+                who all get to know me very well every 30 days, and they have to phone to Canberra to have
+                authorization,
+                and I get my monthly dose of opiates to keep me going till the next lot.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">The dose of opiates needed to
+                treat
+                chronic pain is usually 80 milligrams.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect because the speaker states that the dose of opiates needed varies with height
+              and weight.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">The rate of morphine addiction
+                has
+                not increased over the past 18 years.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect. The speaker has not increased her morphine dose in 18
+              years.
+
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Governments can play a key role
+                in
+                chronic pain management.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is correct because the details in the recording support this idea. The speaker also states
+              that her opiate use is “very well looked after by the government.”
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Authorization for the
+                prescription
+                of opiates is required every thirty days.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This response is incorrect because this detail is a supporting point. Although the speaker states that
+              her
+              GP must obtain authorization for her prescription every 30 days, this is not the main idea the speaker is
+              trying to convey.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test2" role="tabpanel" aria-labelledby="test2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers2 ? showAnswers2=false : showAnswers2=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo2">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/5 Multiple choice choose single answer/Prompt_Multiple_choice_choose_single_answer_Item_2.mp3"
+                type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <p>What is the lecture mainly about?</p>
+            <div class="collapse" id="demo2">
+              <h4>Transcript</h4>
+              <p>I should say one more thing about theory. It's a ... It's great to discover theory, but there .. the
+                ..
+                you have to lose a lot, and you may have noticed, or maybe you didn't, how much you lose. Partly you
+                don't notice it much because here at the university everybody's dedicated to theory, and what is ...
+                what's left out is ,uh, perception cause you-you use your mind not your eyes. Skill-you're not supposed
+                to have to have any particular, uh, sort of bodily kind of skills; there's a kind of mental thing, but
+                I'm not ... let's not call that skill. I'm just calling skill the way you cope with everyday stuff that
+                you use and so forth. Intuition, it's not fair to have intuition, I mean you can have intuition, but
+                it's
+                not ... it's not theory, it's not something that everybody has to believe until you can put it into
+                language and argue for it. Gets rid of emotions, the body, tradition.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Perception and how it relates to
+                the mind and eyes.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect. Perception is discussed in relation to what theory does not include, the
+              speaker says, “you use your mind not your eyes.”
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Intuition and how to use it to
+                form theory.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect. The lecturer declares that intuition is separate from the
+              formation of theory by saying, “you can have intuition but it's not...theory.”
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Theory and how it forces you to
+                lose aspects of yourself.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is correct. The lecturer begins by saying that he is talking about theory. He says, “It's
+              great to discover theory, but ... you have to lose a lot,” and then goes on to list the things that one
+              loses in pursuit of theory including perception, skill, intuition, emotions and the body.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Skill and how it should be
+                applied in a university setting.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect because the lecturer provides a definition of skill, but skill is
+              not the focus of the lecture.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-disqus></app-disqus>
+</section>

@@ -1,0 +1,166 @@
+<section class="main-section">
+  <h4 class="mt-3">You will hear a recording about an analysis of medical research findings. At the end of the
+    recording
+    the last word of group of words has been replaced by a beep. Select the correct option to complete the recording.</h4>
+  <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="test1-tab" data-toggle="tab" href="#test1" role="tab" aria-controls="test1"
+        aria-selected="true">Test
+        1
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="test2-tab" data-toggle="tab" href="#test2" role="tab" aria-controls="test2" aria-selected="false">Test
+        2
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active pt-3" id="test1" role="tabpanel" aria-labelledby="test1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers1 ? showAnswers1=false : showAnswers1=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo1">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/6 Select missing word/Prompt_Select_missing_word_Item_1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="collapse" id="demo1">
+              <h4>Transcript</h4>
+              <p><b>Robyn Guymer:</b> My PhD student, Elaine Chong, did what was called a meta-analysis where you
+                analyze
+                the
+                literature very carefully, to see what evidence there is to suggest that what we eat, particularly in
+                terms of antioxidants, prevents you getting macular degeneration.<br>
+                <b>Norman Swan:</b> Because ophthalmologists have been using antioxidants quite a lot.<br>
+                <b>Robyn Guymer:</b> That's right. There have been studies looking at whether antioxidant supplements
+                slow the
+                progression once you have the disease, whereas this study was looking at trying to stop you getting it
+                (in the first place).</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">before you understood
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This is incorrect because it does not fit into the context of the passage. There is no
+              discussion related to listener understanding.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">after diagnosis
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This is incorrect because it does not fit into the context of the passage. The speaker talks about a
+              scientific study on the effectiveness of antioxidants in preventing a disease. There is no discussion of
+              diagnosis of the disease.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">from anti-oxidants
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This is incorrect because it does not fit into the context of the passage. The speaker indicates that
+              studies have been conducted on the effectiveness of antioxidants in preventing and slowing the
+              progression
+              of a disease. There is no discussion on the causes of disease.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">in the first place
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers1">
+              This is correct because “stop you getting it in the first place” echoes the speaker’s earlier statement
+              about “preventing you getting” a disease. Also, the conjunction “whereas” signals a contrast between the
+              first and second half of the sentence. The first half of the sentence talks about using antioxidants
+              after
+              one has the disease, whereas the second half of the sentence talks about using antioxidants before one
+              gets
+              the disease.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade show pt-3" id="test2" role="tabpanel" aria-labelledby="test2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button (click)="showAnswers2 ? showAnswers2=false : showAnswers2=true" type="button" class="btn btn-primary mt-3"
+              data-toggle="collapse" data-target="#demo2">Toggle Answers</button>
+          </div>
+          <div class="col-md-6 mt-3">
+            <audio controls>
+              <source src="/assets/Prompts/6 Select missing word/Prompt_Select_missing_word_Item_2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="collapse" id="demo2">
+              <h4>Transcript</h4>
+              <p>So what, what meiosis does for every species is generate a lot of diverse individuals. Individuals
+                with
+                different capabilities. In the hope, that by having a population with very diverse individuals that at
+                least some of them will be competent to survive. And, it's wildly successful, almost, almost every
+                species on this planet has meio ... has, has a way to create genetically diverse gametes, and they use
+                meiosis to do that. Ok, so ,um, meiosis is extremely important in the evolution of life and the
+                survival
+                of the (species).</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">genetics
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect because “genetics” is not something that evolves or survives. Additionally,
+              the
+              sentence requires a countable noun to follow “the” and “genetics” is an uncountable noun.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">diversity
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect because “diversity” is not a physical thing that can evolve and survive.
+              Additionally, the sentence requires a countable noun to follow “the” and “diversity” is an uncountable
+              noun.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">species
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is correct because the speaker refers to the impact of meiosis on species throughout the
+              recording. Additionally, the sentence requires a countable noun to follow “the” and “species” is a
+              countable noun.
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" value="" name="optradio">Skill and how it should be
+                applied
+                in a university setting.
+              </label>
+            </div>
+            <div class="explanation" *ngIf="showAnswers2">
+              This response is incorrect because the lecturer provides a definition of skill, but skill is
+              not the focus of the lecture.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-disqus></app-disqus>
+</section>

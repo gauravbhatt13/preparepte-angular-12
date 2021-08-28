@@ -25,6 +25,8 @@ import { SummarizeSpokenTextComponent } from './listening-module/summarize-spoke
 import { ListeningMcAnswersComponent } from './listening-module/listening-mc-answers/listening-mc-answers.component';
 import { ListeningFillBlanksComponent } from './listening-module/listening-fill-blanks/listening-fill-blanks.component';
 import { HighlightCorrectSummaryComponent } from './listening-module/highlight-correct-summary/highlight-correct-summary.component';
+import { ListeningMcSingleAnswerComponent } from './listening-module/listening-mc-single-answer/listening-mc-single-answer.component';
+import { SelectMissingWordComponent } from './listening-module/select-missing-word/select-missing-word.component';
 
 import { DisqusComponent } from './disqus.component';
 
@@ -53,7 +55,9 @@ import { DisqusComponent } from './disqus.component';
     SummarizeSpokenTextComponent,
     ListeningMcAnswersComponent,
     ListeningFillBlanksComponent,
-    HighlightCorrectSummaryComponent
+    HighlightCorrectSummaryComponent,
+    ListeningMcSingleAnswerComponent,
+    SelectMissingWordComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
