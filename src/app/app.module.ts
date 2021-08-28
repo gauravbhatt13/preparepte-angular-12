@@ -13,6 +13,7 @@ import { AnswerShortQuestionsComponent } from './speaking-module/answer-short-qu
 import { WritingComponent } from './writing-module/writing/writing.component';
 import { SummarizeWrittenTextComponent } from './writing-module/summarize-written-text/summarize-written-text.component';
 import { WriteAssayComponent } from './writing-module/write-assay/write-assay.component';
+import { ReadingComponent } from './reading-module/reading/reading.component';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DisqusComponent } from './disqus.component';
     AnswerShortQuestionsComponent,
     WritingComponent,
     SummarizeWrittenTextComponent,
-    WriteAssayComponent
+    WriteAssayComponent,
+    ReadingComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

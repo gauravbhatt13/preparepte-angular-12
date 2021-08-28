@@ -10,6 +10,7 @@ import { AnswerShortQuestionsComponent } from './speaking-module/answer-short-qu
 import { WritingComponent } from './writing-module/writing/writing.component';
 import { SummarizeWrittenTextComponent } from './writing-module/summarize-written-text/summarize-written-text.component';
 import { WriteAssayComponent } from './writing-module/write-assay/write-assay.component';
+import { ReadingComponent } from './reading-module/reading/reading.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
 { path: 'writing', component: WritingComponent },
 { path: 'summarize-written-text', component: SummarizeWrittenTextComponent },
 { path: 'write-assay', component: WriteAssayComponent },
+{ path: 'reading', component: ReadingComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({
