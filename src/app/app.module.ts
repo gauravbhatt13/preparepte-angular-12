@@ -27,7 +27,13 @@ import { ListeningFillBlanksComponent } from './listening-module/listening-fill-
 import { HighlightCorrectSummaryComponent } from './listening-module/highlight-correct-summary/highlight-correct-summary.component';
 import { ListeningMcSingleAnswerComponent } from './listening-module/listening-mc-single-answer/listening-mc-single-answer.component';
 import { SelectMissingWordComponent } from './listening-module/select-missing-word/select-missing-word.component';
-
+import { HighlightIncorrectWordsComponent } from './listening-module/highlight-incorrect-words/highlight-incorrect-words.component';
+import { WriteFromDictationComponent } from './listening-module/write-from-dictation/write-from-dictation.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { UsefulShortQuestionsComponent } from './blogs-module/useful-short-questions/useful-short-questions.component';
+import { ListOfEssaysComponent } from './blogs-module/list-of-essays/list-of-essays.component';
+import { SampleEssaysComponent } from './blogs-module/sample-essays/sample-essays.component';
+import { SampleSummariesComponent } from './blogs-module/sample-summaries/sample-summaries.component';
 import { DisqusComponent } from './disqus.component';
 
 @NgModule({
@@ -57,7 +63,13 @@ import { DisqusComponent } from './disqus.component';
     ListeningFillBlanksComponent,
     HighlightCorrectSummaryComponent,
     ListeningMcSingleAnswerComponent,
-    SelectMissingWordComponent
+    SelectMissingWordComponent,
+    HighlightIncorrectWordsComponent,
+    WriteFromDictationComponent,
+    CatalogueComponent,
+    UsefulShortQuestionsComponent,
+    ListOfEssaysComponent,
+    SampleEssaysComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

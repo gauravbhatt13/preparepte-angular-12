@@ -23,6 +23,13 @@ import { ListeningFillBlanksComponent } from './listening-module/listening-fill-
 import { HighlightCorrectSummaryComponent } from './listening-module/highlight-correct-summary/highlight-correct-summary.component';
 import { ListeningMcSingleAnswerComponent } from './listening-module/listening-mc-single-answer/listening-mc-single-answer.component';
 import { SelectMissingWordComponent } from './listening-module/select-missing-word/select-missing-word.component';
+import { HighlightIncorrectWordsComponent } from './listening-module/highlight-incorrect-words/highlight-incorrect-words.component';
+import { WriteFromDictationComponent } from './listening-module/write-from-dictation/write-from-dictation.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { UsefulShortQuestionsComponent } from './blogs-module/useful-short-questions/useful-short-questions.component';
+import { ListOfEssaysComponent } from './blogs-module/list-of-essays/list-of-essays.component';
+import { SampleEssaysComponent } from './blogs-module/sample-essays/sample-essays.component';
+import { SampleSummariesComponent } from './blogs-module/sample-summaries/sample-summaries.component';
 
 const routes: Routes = [
 { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -49,6 +56,13 @@ const routes: Routes = [
 { path: 'highlight-correct-summary', component: HighlightCorrectSummaryComponent },
 { path: 'listening-mc-single-answer', component: ListeningMcSingleAnswerComponent },
 { path: 'select-missing-word', component: SelectMissingWordComponent },
+{ path: 'highlight-incorrect-words', component: HighlightIncorrectWordsComponent },
+{ path: 'write-from-dictation', component: WriteFromDictationComponent },
+{ path: 'catalogue', component: CatalogueComponent },
+{ path: 'useful-short-questions', component: UsefulShortQuestionsComponent },
+{ path: 'list-of-essays', component: ListOfEssaysComponent },
+{ path: 'sample-essays', component: SampleEssaysComponent },
+{ path: 'sample-summaries', component: SampleSummariesComponent },
 { path: '**', component: HomeComponent }];
 
 @NgModule({
