@@ -10,14 +10,11 @@
     "dev:ssr": "ng run preparepte:serve-ssr",
     "serve:ssr": "node dist/preparepte/server/main.js",
     "build:ssr": "ng build && ng run preparepte:server",
-    "prerender": "ng run preparepte:prerender",
-    "dev:sls": "ng build -c development && ng run preparepte:serverless -c development && npm run serve:sls",
-    "serve:sls": "serverless offline start --noPrependStageInUrl",
-    "deploy": "serverless deploy",
-    "terminate": "serverless remove"
+    "prerender": "ng run preparepte:prerender"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~12.2.3",
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
@@ -29,14 +26,11 @@
     "@angular/router": "~12.2.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@nguniversal/express-engine": "^12.1.0",
-    "@vendia/serverless-express": "^4.3.10",
     "bootstrap": "^4.6.0",
     "express": "^4.15.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
-    "serverless": "^2.56.0",
-    "serverless-offline": "^8.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
